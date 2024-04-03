@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Clanders from './components/Clander/Canders';
+import DraggableMarker from './components/Example/DraggableMarker';
+import Event from './components/Example/Event';
+import LayerGroups from './components/Example/LayerGroups';
+import MyMap from './components/Example/MyMap';
+import SearchMap from './components/Example/SearchMap';
+import Tooltips from './components/Example/Tooltips';
+
+const App = () => {
+  
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Event/>
+     <LayerGroups/>
+     <SearchMap/>
+     <Tooltips/>
+
+     {/* Not working */}
+     {/* <MyMap/> */}
+     {/* <DraggableMarker/> */}
+     {/* <Clanders/> */}
+    </>
   );
-}
+};
 
 export default App;
